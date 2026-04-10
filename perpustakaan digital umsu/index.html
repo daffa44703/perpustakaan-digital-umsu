@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan Digital UMSU</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <nav id="navbar">
+        <div class="nav-brand">
+          <span class="brand-icon">📚</span>
+          <span class="brand-text">
+            PerpusDigital
+            <span class="brand-accent">UMSU</span>
+          </span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#koleksi">Koleksi</a></li>
+          <li><a href="#peminjaman">Peminjaman</a></li>
+          <li><a href="#daftar-item">Katalog</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </header>
+
+    <!-- ===== HERO (SOAL 1 - semantic HTML5) ===== -->
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>
+            Perpustakaan Digital
+            <br />
+            <span class="highlight">UMSU</span>
+          </h1>
+          <p class="hero-sub">
+            Temukan ribuan buku, jurnal, dan artikel ilmiah secara online. Akses kapan saja, di mana
+            saja.
+          </p>
+          <div class="hero-actions">
+            <a href="#koleksi" class="btn btn-primary">Jelajahi Koleksi</a>
+            <a href="#peminjaman" class="btn btn-outline">Pinjam Buku</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">12.500+</span>
+              <span class="stat-label">Buku</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3.200+</span>
+              <span class="stat-label">Jurnal</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">8.000+</span>
+              <span class="stat-label">Anggota</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="book-stack">
+            <div class="book b1">HTML & Web Design</div>
+            <div class="book b2">Algoritma</div>
+            <div class="book b3">Basis Data</div>
+            <div class="book b4">UI/UX Design</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== LAYANAN / KARTU (SOAL 2 - Flexbox + Media Query) ===== -->
+      <section id="layanan">
+        <div class="section-header">
+          <h2>Layanan Kami</h2>
+          <p>Berbagai layanan perpustakaan digital untuk mendukung akademik Anda</p>
+        </div>
+        <div class="cards-container" id="layananCards">
+          <div class="card">
+            <div class="card-icon">🔍</div>
+            <h3>Pencarian Buku</h3>
+            <p>
+              Cari buku dari koleksi lebih dari 12.500 judul dengan fitur pencarian canggih
+              berdasarkan judul, penulis, atau ISBN.
+            </p>
+            <div class="card-meta">Gratis · Online 24/7</div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📖</div>
+            <h3>Baca Online</h3>
+            <p>
+              Baca buku dan jurnal langsung di browser tanpa perlu mengunduh. Kompatibel dengan
+              semua perangkat.
+            </p>
+            <div class="card-meta">Untuk Anggota · HD Reader</div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📥</div>
+            <h3>Unduh E-Book</h3>
+            <p>
+              Unduh buku dalam format PDF, EPUB, atau MOBI untuk dibaca secara offline sesuai
+              kebutuhan Anda.
+            </p>
+            <div class="card-meta">PDF · EPUB · MOBI</div>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔔</div>
+            <h3>Notifikasi Buku</h3>
+            <p>
+              Dapatkan pemberitahuan otomatis saat buku yang Anda inginkan tersedia atau batas
+              peminjaman mendekati.
+            </p>
+            <div class="card-meta">Email · SMS · Push</div>
+          </div>
+          <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Riwayat Bacaan</h3>
+            <p>
+              Lacak semua buku yang pernah Anda baca dan pinjam. Kelola daftar bacaan Anda dengan
+              mudah.
+            </p>
+            <div class="card-meta">Dashboard Pribadi</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== KOLEKSI UNGGULAN ===== -->
+      <section id="koleksi">
+        <div class="section-header">
+          <h2>Koleksi Unggulan</h2>
+          <p>Buku-buku terpopuler minggu ini</p>
+        </div>
+        <div class="koleksi-grid">
+          <article class="book-card">
+            <div class="book-cover" style="background: linear-gradient(135deg, #1a6b3c, #2d9e63)">
+              <span class="book-icon">💻</span>
+            </div>
+            <div class="book-info">
+              <h4>Pemrograman Web Dasar</h4>
+              <p class="book-author">Dr. Ahmad Fauzi</p>
+              <div class="book-rating">★★★★★</div>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover" style="background: linear-gradient(135deg, #1a3b6b, #2d63a0)">
+              <span class="book-icon">🧠</span>
+            </div>
+            <div class="book-info">
+              <h4>Kecerdasan Buatan</h4>
+              <p class="book-author">Prof. Siti Rahayu</p>
+              <div class="book-rating">★★★★☆</div>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover" style="background: linear-gradient(135deg, #6b1a3b, #a02d63)">
+              <span class="book-icon">🗄️</span>
+            </div>
+            <div class="book-info">
+              <h4>Sistem Basis Data</h4>
+              <p class="book-author">Ir. Budi Santoso</p>
+              <div class="book-rating">★★★★★</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== FORM PEMINJAMAN (SOAL 3 - 5 jenis input + validasi HTML5) ===== -->
+      <section id="peminjaman">
+        <div class="section-header">
+          <h2>Form Peminjaman Buku</h2>
+          <p>Isi formulir di bawah untuk meminjam buku dari koleksi kami</p>
+        </div>
+        <div class="form-wrapper">
+          <form id="peminjamanForm" novalidate>
+            <!-- TEXT -->
+            <div class="form-group">
+              <label for="namaPeminjam">
+                Nama Lengkap
+                <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="namaPeminjam"
+                name="namaPeminjam"
+                placeholder="Masukkan nama lengkap Anda"
+                required
+                minlength="3"
+              />
+              <span class="error-msg" id="err-namaPeminjam"></span>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group">
+              <label for="emailPeminjam">
+                Alamat Email
+                <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="emailPeminjam"
+                name="emailPeminjam"
+                placeholder="contoh@email.com"
+                required
+              />
+              <span class="error-msg" id="err-emailPeminjam"></span>
+            </div>
+
+            <!-- PASSWORD (nomor telepon tersembunyi / password field) -->
+            <div class="form-group">
+              <label for="nomorHP">
+                Nomor Telepon
+                <span class="required">*</span>
+              </label>
+              <input
+                type="number"
+                id="nomorHP"
+                name="nomorHP"
+                placeholder="Contoh: 081234567890"
+                required
+                min="1"
+              />
+              <span class="error-msg" id="err-nomorHP"></span>
+            </div>
+
+            <!-- SELECT -->
+            <div class="form-group">
+              <label for="kategori">
+                Kategori Buku
+                <span class="required">*</span>
+              </label>
+              <select id="kategori" name="kategori" required>
+                <option value="">-- Pilih Kategori --</option>
+                <option value="informatika">Ilmu Komputer & Informatika</option>
+                <option value="teknik">Teknik & Rekayasa</option>
+                <option value="ekonomi">Ekonomi & Bisnis</option>
+                <option value="hukum">Hukum & Ilmu Sosial</option>
+                <option value="kedokteran">Kedokteran & Kesehatan</option>
+                <option value="sastra">Sastra & Bahasa</option>
+              </select>
+              <span class="error-msg" id="err-kategori"></span>
+            </div>
+
+            <!-- TEXT - Judul Buku -->
+            <div class="form-group">
+              <label for="judulBuku">
+                Judul Buku yang Dipinjam
+                <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="judulBuku"
+                name="judulBuku"
+                placeholder="Masukkan judul buku"
+                required
+              />
+              <span class="error-msg" id="err-judulBuku"></span>
+            </div>
+
+            <!-- RADIO -->
+            <div class="form-group">
+              <label>
+                Durasi Peminjaman
+                <span class="required">*</span>
+              </label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="durasi" value="7" required />
+                  7 Hari
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="durasi" value="14" />
+                  14 Hari
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="durasi" value="30" />
+                  30 Hari
+                </label>
+              </div>
+              <span class="error-msg" id="err-durasi"></span>
+            </div>
+
+            <!-- CHECKBOX -->
+            <div class="form-group">
+              <label>
+                Format yang Diinginkan
+                <span class="required">*</span>
+              </label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="format" value="pdf" id="formatPDF" />
+                  PDF
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="format" value="epub" id="formatEPUB" />
+                  EPUB
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="format" value="fisik" id="formatFisik" />
+                  Buku Fisik
+                </label>
+              </div>
+              <span class="error-msg" id="err-format"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="reset" class="btn btn-outline">Reset Form</button>
+              <button type="submit" class="btn btn-primary">Kirim Peminjaman</button>
+            </div>
+
+            <!-- SUCCESS MESSAGE -->
+            <div class="success-msg" id="successMsg">
+              ✅ Permohonan peminjaman berhasil dikirim! Kami akan menghubungi Anda melalui email.
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===== KATALOG DINAMIS (SOAL 5 - JavaScript DOM) ===== -->
+      <section id="daftar-item">
+        <div class="section-header">
+          <h2>Katalog Buku</h2>
+          <p>Daftar buku yang tersedia — tambah atau hapus tanpa reload halaman</p>
+        </div>
+
+        <div class="katalog-controls">
+          <div class="add-form">
+            <input type="text" id="inputJudul" placeholder="Judul buku..." />
+            <input type="text" id="inputPenulis" placeholder="Penulis..." />
+            <input type="number" id="inputHarga" placeholder="Harga (Rp)" min="0" />
+            <button class="btn btn-primary" onclick="tambahItem()">+ Tambah</button>
+          </div>
+          <span class="item-count" id="itemCount">0 buku</span>
+        </div>
+
+        <div class="item-list" id="itemList">
+          <!-- Diisi oleh JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-icon">📚</span>
+          <h3>Perpustakaan Digital UMSU</h3>
+          <p>Universitas Muhammadiyah Sumatera Utara</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#peminjaman">Peminjaman</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p>📧 perpus@umsu.ac.id</p>
+          <p>📍 Jl. Kapten Mukhtar Basri, Medan</p>
+          <p>🕐 Sen–Jum: 08.00–16.00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Perpustakaan Digital UMSU · Fakultas Ilmu Komputer dan Teknologi Informasi</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
